@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/users")
-@CrossOrigin(origins = "http://localhost:5173") // React ko allow karne ke liye
+@CrossOrigin(origins = "https://makhana-frontend-psi.vercel.app/") // change with the live url
 public class UserController {
 
     @Autowired

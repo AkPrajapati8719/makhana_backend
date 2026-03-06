@@ -6,7 +6,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/payment")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "https://makhana-frontend-psi.vercel.app/")
 public class PaymentController {
 
     // here the Razorpay key id and secret will be stored securely (for demo, we are

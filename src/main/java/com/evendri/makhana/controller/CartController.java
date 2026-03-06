@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/cart")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "https://makhana-frontend-psi.vercel.app/")
 public class CartController {
 
     // sync the data to frontend and backend
