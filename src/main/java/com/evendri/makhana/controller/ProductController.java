@@ -32,7 +32,7 @@ public class ProductController {
     public ResponseEntity<Product> addProduct(@RequestBody Product product) {
         Product newProduct = productService.addProduct(product);
         return ResponseEntity.ok(newProduct);
-    } 
+    }
 
     @GetMapping("/{id}")
     public Product getProductById(@PathVariable Long id) {
@@ -69,7 +69,7 @@ public class ProductController {
             Files.copy(file.getInputStream(), filePath, StandardCopyOption.REPLACE_EXISTING);
 
             // 4. Return correct backend URL (port 8082)
-            String imageUrl = "http://localhost:8082/uploads/" + fileName;
+            String imageUrl = "https://makhana-backend.onrender.com/uploads/" + fileName;
             Map<String, String> response = new HashMap<>();
             response.put("imageUrl", imageUrl);
 
